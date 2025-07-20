@@ -1,24 +1,24 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
+  background: #f6f8fa;
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #203040;
 }
 
 #app {
-  max-width: 520px;
-  min-height: 420px;
-  margin: 36px auto 0 auto;
+  max-width: 540px;
+  min-height: 440px;
+  margin: 44px auto 0 auto;
   background: #fff;
-  border-radius: 14px;
+  border-radius: 12px;
   box-shadow: 0 8px 32px rgba(44,144,227,0.13);
-  padding: 32px 22px 30px 22px;
+  padding: 36px 18px 26px 18px;
 }
 
 h2 {
   text-align: center;
-  color: #2d90e3;
+  color: #2484c6;
   margin-bottom: 20px;
   font-size: 1.35rem;
   letter-spacing: 0.2px;
@@ -30,125 +30,59 @@ ul {
   margin: 0 0 14px 0;
 }
 
-.subject, .unit {
+.unit, .subject {
   background: #eaf3fd;
-  color: #1976d2;
-  margin: 12px 0;
-  padding: 14px 8px;
-  border-radius: 7px;
-  font-size: 1.08rem;
-  font-weight: 500;
+  color: #16507d;
+  margin: 11px 0;
+  padding: 15px 8px;
+  border-radius: 8px;
+  font-size: 1.11rem;
+  font-weight: 600;
   cursor: pointer;
-  box-shadow: 0 1px 6px rgba(44,144,227,0.05);
-  transition: background 0.14s;
+  box-shadow: 0 1px 7px rgba(44,144,227,0.05);
+  transition: background 0.13s, transform 0.13s;
   text-align: center;
 }
 
-.subject:hover, .unit:hover {
-  background: #cfe5fc;
+.unit:hover, .subject:hover {
+  background: #badefb;
+  transform: translateY(-2px) scale(1.03);
 }
 
 .progress {
   text-align: right;
-  font-size: 0.95rem;
-  color: #b1b7be;
-  margin-bottom: 9px;
+  font-size: 0.96rem;
+  color: #7da7c7;
+  margin-bottom: 13px;
 }
 
 .question {
-  font-size: 1.10rem;
-  margin: 14px 0 20px 0;
-  color: #222;
-  font-weight: 500;
+  font-size: 1.13rem;
+  margin: 15px 0 23px 0;
+  color: #213457;
+  font-weight: 600;
 }
 
 .options {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: 29px;
+  gap: 17px;
+  margin-bottom: 24px;
 }
 
 .option-btn {
-  background: #2d90e3;
+  background: #2484c6;
   color: #fff;
   border: none;
   border-radius: 6px;
-  padding: 13px;
-  font-size: 1.07rem;
+  padding: 14px;
+  font-size: 1.10rem;
   cursor: pointer;
   font-weight: 500;
-  transition: background 0.16s;
+  letter-spacing: 0.01em;
+  transition: background 0.13s;
+  box-shadow: 0 2px 10px rgba(44, 144, 227, 0.09);
 }
 
-.option-btn:hover {
-  background: #186cbb;
-}
-
-.score {
-  font-size: 1.18rem;
-  font-weight: bold;
-  color: #18b783;
-  text-align: center;
-  margin: 27px 0 18px 0;
-}
-
-.retry-btn {
-  background: #8e44ad;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 13px;
-  font-size: 1.04rem;
-  width: 100%;
-  margin-bottom: 13px;
-  cursor: pointer;
-  box-shadow: 0 2px 12px rgba(142, 68, 173, 0.07);
-  font-weight: 500;
-}
-
-.retry-btn:hover {
-  background: #5e2673;
-}
-
-.back-btn {
-  background: #f0f3f7;
-  color: #444;
-  border: none;
-  border-radius: 6px;
-  padding: 12px;
-  font-size: 1.02rem;
-  width: 100%;
-  margin-top: 10px;
-  cursor: pointer;
-  font-weight: 500;
-}
-
-.result-list {
-  margin-top: 24px;
-}
-
-.result-question {
-  background: #f6fbff;
-  margin-bottom: 14px;
-  padding: 13px 11px;
-  border-radius: 7px;
-  border: 1px solid #e4ecf6;
-  font-size: 1.01rem;
-}
-
-.correct {
-  color: #18b783;
-  font-weight: 700;
-}
-
-.wrong {
-  color: #e74c3c;
-  font-weight: 700;
-}
-
-@media (max-width: 540px) {
-  #app { margin: 0; padding: 12px 1vw 18px 1vw; min-height: unset; border-radius: 0; box-shadow: none; }
-  h2 { font-size: 1.01rem }
-  .option-btn, .back-btn, .retry-btn { font-size: 0.98rem; }
-}
+.option-btn:hover, .option-btn:active {
+  background: #
