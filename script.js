@@ -1,7 +1,6 @@
-// ========== UNITWISE MCQs: NURSING EDUCATION (8 UNITS) ==========
-
 const unitsData = {
   "Nursing Education": [
+    // ===== UNIT 1: FILLED WITH ALL MCQs FROM YOUR PDF =====
     {
       unitName: "Unit 1: Introduction to Theoretical Foundations",
       questions: [
@@ -157,10 +156,10 @@ const unitsData = {
         }
       ]
     },
+    // ===== UNIT 2: FILLED WITH MCQs FROM YOUR PDF =====
     {
       unitName: "Unit 2: Assessment and Planning",
       questions: [
-        // All 30 MCQs from Chapter 2, converted to the same format as above (see below for examples)
         {
           questionText: "Factors influencing selection of clinical learning experience except:",
           options: [
@@ -181,60 +180,96 @@ const unitsData = {
           ],
           correctAnswer: "Student behavior to be focused interms of application of theory in practice"
         },
-        // ...continue with all 30 MCQs from Chapter 2 as seen in your PDF[1]
+        {
+          questionText: "Nursing rounds are focused on:",
+          options: [
+            "Multidisciplinary approach",
+            "Students-patient approach",
+            "Patient-patient approach",
+            "Patient-relative approach"
+          ],
+          correctAnswer: "Multidisciplinary approach"
+        },
+        {
+          questionText: "The case study method of clinical teaching is:",
+          options: [
+            "Exhaustive, systematic and general investigation",
+            "It focus on only individuals",
+            "Extensive systematic and in depth investigation",
+            "The multiple factor are ignored"
+          ],
+          correctAnswer: "It focus on only individuals"
+        },
+        {
+          questionText: "Concept mapping is:",
+          options: [
+            "Used to encourage critical thniking",
+            "Link key concepts for analysis of information",
+            "Encourage students to improve judgment",
+            "All of these"
+          ],
+          correctAnswer: "Encourage students to improve judgment"
+        }
+        // ...CONTINUE ADDING ALL 30 QUESTIONS from Pdf, same format!
       ]
     },
+    // ===== UNIT 3: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 3: Implementation",
       questions: [
-        // ...copy MCQs from Chapter 3 in the same question/answer format
+        // Add all Unit 3 MCQs here in same format
       ]
     },
+    // ===== UNIT 4: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 4: Teaching in the Clinical Setting",
       questions: [
-        // ...copy MCQs from Chapter 4 in the same question/answer format
+        // Add all Unit 4 MCQs here in same format
       ]
     },
+    // ===== UNIT 5: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 5: Educational/Teaching Media",
       questions: [
-        // ...copy MCQs from Chapter 5 in the same question/answer format
+        // Add all Unit 5 MCQs here in same format
       ]
     },
+    // ===== UNIT 6: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 6: Assessment and Evaluation Methodologies",
       questions: [
-        // ...copy MCQs from Chapter 6 in the same question/answer format
+        // Add all Unit 6 MCQs here in same format
       ]
     },
+    // ===== UNIT 7: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 7: Guidance/Academic Advising Counseling and Discipline",
       questions: [
-        // ...copy MCQs from Chapter 7 in the same question/answer format
+        // Add all Unit 7 MCQs here in same format
       ]
     },
+    // ===== UNIT 8: (ADD YOUR MCQs HERE) =====
     {
       unitName: "Unit 8: Ethics and Evidence-Based Teaching in Nursing Education",
       questions: [
-        // ...copy MCQs from Chapter 8 in the same question/answer format
+        // Add all Unit 8 MCQs here in same format
       ]
     }
   ]
 };
 
 
-// ========== MAIN APP LOGIC (No changes needed!) ==========
+// ===================== APP LOGIC =====================
 
 let currentUnitIdx = null;
 let currentQuestionIdx = 0;
 let score = 0;
 let answers = [];
 
-// Rendering Functions
+// Show all units
 function showUnits() {
   const app = document.getElementById('app');
-  app.innerHTML = '<h2>Nursing Education - Select a Unit</h2><ul id="unit-list"></ul>';
+  app.innerHTML = '<h2>Select a Unit</h2><ul id="unit-list"></ul>';
   const list = document.getElementById('unit-list');
   unitsData["Nursing Education"].forEach((unit, idx) => {
     const li = document.createElement('li');
@@ -245,6 +280,7 @@ function showUnits() {
   });
 }
 
+// Start quiz for a unit
 function startQuiz(unitIdx) {
   currentUnitIdx = unitIdx;
   currentQuestionIdx = 0;
@@ -253,6 +289,7 @@ function startQuiz(unitIdx) {
   showQuestion();
 }
 
+// Show a question
 function showQuestion() {
   const unit = unitsData["Nursing Education"][currentUnitIdx];
   const question = unit.questions[currentQuestionIdx];
@@ -273,6 +310,7 @@ function showQuestion() {
   });
 }
 
+// Submit answer and move to next
 function submitAnswer(selected) {
   const unit = unitsData["Nursing Education"][currentUnitIdx];
   const question = unit.questions[currentQuestionIdx];
@@ -291,24 +329,43 @@ function submitAnswer(selected) {
   }
 }
 
+// Enhanced result page for aesthetics & clarity
 function showResult() {
   const unit = unitsData["Nursing Education"][currentUnitIdx];
   const app = document.getElementById('app');
+  // Score wording
+  let comment = "Great job!";
+  if (score === unit.questions.length) comment = "Perfect!";
+  else if (score / unit.questions.length > 0.8) comment = "Excellent work!";
+  else if (score / unit.questions.length > 0.6) comment = "Good effort. Review missed ones below.";
+  else comment = "Keep practicing! Review the correct answers below.";
+
   let html = `
-    <h2>${unit.unitName} Quiz Result</h2>
-    <div class="score">Your Score: ${score}/${unit.questions.length}</div>
+    <div class="score-card">
+      <div class="score">Your Score: ${score} / ${unit.questions.length}</div>
+      <div class="score-comment">${comment}</div>
+    </div>
     <div class="result-list">
       ${answers.map((a, i) => `
         <div class="result-question">
-          <div><b>Q${i + 1}.</b> ${a.question}</div>
+          <span class="q-title">Q${i + 1}. ${a.question}</span>
           <div>
-            Your answer: <span class="${a.selected === a.correct ? 'correct' : 'wrong'}">${a.selected}</span><br>
+            Your answer: 
+              <span class="${a.selected === a.correct ? 'correct' : 'wrong'}">
+                ${a.selected}
+                ${a.selected === a.correct 
+                  ? '<span class="result-correct-icon">✔️</span>'
+                  : '<span class="result-wrong-icon">❌</span>'
+                }
+              </span>
+          </div>
+          <div>
             Correct answer: <span class="correct">${a.correct}</span>
           </div>
         </div>
       `).join('')}
     </div>
-    <button class="retry-btn" onclick="startQuiz(${currentUnitIdx})">Try Again</button>
+    <button class="retry-btn" onclick="startQuiz(${currentUnitIdx})">Try This Unit Again</button>
     <button class="back-btn" onclick="showUnits()">⬅ Back to Units</button>
   `;
   app.innerHTML = html;
