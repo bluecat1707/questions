@@ -1,90 +1,60 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f6f8fa;
+  background: #f5f7fa;
   margin: 0;
   padding: 0;
-}
-
-.container {
-  max-width: 420px;
-  margin: 48px auto 0 auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 8px 28px rgba(44,144,227,0.09);
-  padding: 32px 24px 28px 24px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #2d90e3;
-  letter-spacing: 1px;
-}
-
-.input-group {
-  margin-bottom: 16px;
-  display: flex;
-  gap: 8px;
-}
-
-input[type="number"], select {
-  font-size: 1.05rem;
-  padding: 10px 8px;
-  flex: 1;
-  border-radius: 6px;
-  border: 1px solid #d0d7de;
-  outline: none;
-  box-sizing: border-box;
-  background: #f4fafd;
-  transition: border 0.2s;
-}
-
-input:focus, select:focus {
-  border-color: #2d90e3;
-  background: #e8f2fa;
-}
-
-button {
-  background: #2d90e3;
-  color: #fff;
-  border: none;
-  padding: 12px 0;
-  border-radius: 6px;
-  width: 100%;
-  font-size: 1.07rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.18s;
-  box-shadow: 0 2px 12px rgba(44,144,227,0.10);
-}
-
-button:active, button:hover {
-  background: #186cbb;
-}
-
-#result {
-  margin-top: 22px;
-  font-size: 1.15rem;
   color: #222;
-  min-height: 32px;
-  background: #e8f4ff;
-  border-radius: 6px;
-  padding: 12px 0;
-  text-align: center;
-  word-break: break-word;
-  box-sizing: border-box;
-  border: 1px solid #dde5ee;
 }
 
-@media (max-width: 600px) {
-  .container {
-    padding: 20px 6vw 20px 6vw;
-    max-width: 98vw;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  h1 { font-size: 1.3rem; }
-  #result { font-size: 1rem; }
+#app {
+  max-width: 430px;
+  min-height: 410px;
+  margin: 42px auto 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 30px rgba(44,144,227,0.11);
+  padding: 34px 18px 24px 18px;
 }
+
+h2 {
+  text-align: center;
+  color: #2d90e3;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+  letter-spacing: 0.3px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.subject, .unit {
+  background: #eaf3fd;
+  color: #1976d2;
+  margin: 13px 0;
+  padding: 14px 8px;
+  border-radius: 7px;
+  font-size: 1.09rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(44,144,227,0.05);
+  transition: background 0.14s;
+  text-align: center;
+}
+
+.subject:hover, .unit:hover {
+  background: #cfe5fc;
+}
+
+.progress {
+  text-align: right;
+  font-size: 0.95rem;
+  color: #b1b7be;
+  margin-bottom: 9px;
+}
+
+.question {
+  font-size: 1.09rem;
+  margin: 11px 0 18px
