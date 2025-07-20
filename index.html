@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Unitwise Learning App</title>
+  <meta name="description" content="A simple and effective Unitwise Learning App for converting units on the web.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Optional: Favicon (simple calculator emoji as icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><text y='1em' font-size='96'>🧮</text></svg>">
+</head>
+<body>
+  <div class="container">
+    <h1>Unitwise Converter</h1>
+    <form id="converter-form" autocomplete="off">
+      <div class="input-group">
+        <input id="inputValue" type="number" placeholder="Enter value..." required min="0" step="any" />
+        <select id="inputUnit">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="mile">Mile</option>
+          <option value="foot">Foot</option>
+          <!-- Add more options here -->
+        </select>
+      </div>
+      <div class="input-group">
+        <select id="outputUnit">
+          <option value="meter">Meter</option>
+          <option value="kilometer">Kilometer</option>
+          <option value="mile">Mile</option>
+          <option value="foot">Foot</option>
+        </select>
+      </div>
+      <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  
+  <!-- Link to external JS -->
+  <script src="script.js"></script>
+</body>
+</html>
