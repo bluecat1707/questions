@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Nursing Education MCQ App</title>
-  <meta name="description" content="Unit-wise MCQ practice for Nursing Education.">
+  <meta name="description" content="Practice unit-wise Multiple Choice Questions for Nursing Education (8 units) with instant, beautiful feedback.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍⚕️</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- The app will render here -->
+  <header>
+    <h1>Nursing Education MCQ App</h1>
+    <p class="subtitle">Unit-wise MCQ Practice • All 8 Units</p>
+  </header>
+
+  <!-- Main App UI rendered here -->
   <div id="app"></div>
 
-  <!-- JavaScript logic for all 8 units and navigation will be loaded here -->
+  <footer>
+    <p>© <span id="year"></span> Nursing Education MCQ App • For student practice and revision</p>
+  </footer>
+
+  <script>
+    // Auto footer year
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+  </script>
   <script src="script.js"></script>
-  <!-- 
-    Usage:
-    - MCQ/unit data is in script.js 
-    - Edit/add units and MCQs in script.js 
-    - CSS tweaks in style.css
-  -->
 </body>
 </html>
