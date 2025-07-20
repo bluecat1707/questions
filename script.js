@@ -827,31 +827,365 @@ const unitsData = {
 },
     // ===== UNIT 5: (ADD YOUR MCQs HERE) =====
     {
-      unitName: "Unit 5: Educational/Teaching Media",
-      questions: [
-        // Add all Unit 5 MCQs here in same format
-      ]
+  unitName: "Unit 5: Educational/Teaching Media",
+  questions: [
+    {
+      questionText: "Tele nursing refers to:",
+      options: [
+        "Utilization of information technology",
+        "Utilization of information technology in provision of nursing service in the hospital",
+        "Utilization of information technology in provision of nursing service from a distance",
+        "It is synonym of tele medicine"
+      ],
+      correctAnswer: "Utilization of information technology in provision of nursing service from a distance"
     },
+    {
+      questionText: "E-learning platform models except:",
+      options: [
+        "MOOCs and blackboard learn",
+        "Future learn and linkedin",
+        "Skill share and coursera",
+        "Chalk and Blackboard"
+      ],
+      correctAnswer: "Chalk and Blackboard"
+    },
+    {
+      questionText: "The types of models are:",
+      options: [
+        "Solid models and cutaway models",
+        "Working models and sand models",
+        "X-ray model and MRI model",
+        "Both (a) and (b)"
+      ],
+      correctAnswer: "X-ray model and MRI model"
+    },
+    {
+      questionText: "Disadvantage of blackboard and chalk is except:",
+      options: [
+        "Cannot be saved or preserved",
+        "Cannot be used for large audience",
+        "Require imagination",
+        "Economical and reusable"
+      ],
+      correctAnswer: "Economical and reusable"
+    },
+    {
+      questionText: "Principles of AV aids are:",
+      options: [
+        "Preparation and handling",
+        "Selection and presentation",
+        "Condemnation",
+        "Both (a) and (b)"
+      ],
+      correctAnswer: "Condemnation"
+    },
+    {
+      questionText: "Factors influencing effectiveness of AV aids are:",
+      options: [
+        "Preparation and preservation",
+        "Selection",
+        "Presentation and evaluation",
+        "All of these"
+      ],
+      correctAnswer: "All of these"
+    },
+    {
+      questionText: "AV aids can be classified as:",
+      options: [
+        "Projected and nonprojected",
+        "Hearing aids and visual aids",
+        "Simple and sophisticated aids",
+        "All of these"
+      ],
+      correctAnswer: "All of these"
+    },
+    {
+      questionText: "“The AV aids are sensory objects that help in stimulations and reinforcing learning” was defined by:",
+      options: [
+        "Burton",
+        "Kinder S James",
+        "Mcknown and Roberts",
+        "None of these"
+      ],
+      correctAnswer: "Burton"
+    },
+    {
+      questionText: "The advantage of charts is:",
+      options: [
+        "Simple to preserve",
+        "Easy transportability",
+        "Easily available in the market",
+        "None of these"
+      ],
+      correctAnswer: "Easy transportability"
+    },
+    {
+      questionText: "Three dimensional aids are:",
+      options: [
+        "Nearest to the living experience",
+        "Mock-ups",
+        "Models",
+        "All of these"
+      ],
+      correctAnswer: "All of these"
+    }
+  ]
+},
     // ===== UNIT 6: (ADD YOUR MCQs HERE) =====
     {
-      unitName: "Unit 6: Assessment and Evaluation Methodologies",
-      questions: [
-        // Add all Unit 6 MCQs here in same format
-      ]
+  unitName: "Unit 6: Assessment and Evaluation Methodologies",
+  questions: [
+    {
+      questionText: "Evaluation is a process of:",
+      options: [
+        "Appraisal in every aspect of life",
+        "Teaching in graduate schools",
+        "Method of teaching",
+        "None of the above"
+      ],
+      correctAnswer: "Appraisal in every aspect of life"
     },
+    {
+      questionText: "To make evaluation easy, the expected learning outcomes need to be:",
+      options: [
+        "Specific and measurable",
+        "Achievable",
+        "Sample",
+        "All of these"
+      ],
+      correctAnswer: "All of these"
+    },
+    {
+      questionText: "The types of evaluation are:",
+      options: [
+        "Formative",
+        "Summative",
+        "Comprehensive",
+        "Both (a) and (b)"
+      ],
+      correctAnswer: "Both (a) and (b)"
+    },
+    {
+      questionText: "Formative evaluation is:",
+      options: [
+        "Done during the course of instruction",
+        "Done during the end of course",
+        "Both a and b",
+        "None of these"
+      ],
+      correctAnswer: "Done during the course of instruction"
+    },
+    {
+      questionText: "Advantages of multiple choice questions are:",
+      options: [
+        "Objective in nature",
+        "Subjective in nature",
+        "Respondents concentrate on information",
+        "Both (a) and (c)"
+      ],
+      correctAnswer: "Both (a) and (c)"
+    },
+    {
+      questionText: "Barriers in evaluation are:",
+      options: [
+        "Perfect planning and evaluation",
+        "Lack of expert evaluation",
+        "Ineffective assessment test",
+        "Both (b) and (c)"
+      ],
+      correctAnswer: "Ineffective assessment test"
+    },
+    {
+      questionText: "OSCE stands for:",
+      options: [
+        "Objective structured clinical examination",
+        "Objective structure critical examination",
+        "Objective structured counseling examination",
+        "None of these"
+      ],
+      correctAnswer: "Objective structured clinical examination"
+    },
+    {
+      questionText: "In OSPE the types of stations are:",
+      options: [
+        "Skill station and response station",
+        "Simulator",
+        "Analytical station",
+        "None of these"
+      ],
+      correctAnswer: "Skill station and response station"
+    },
+    {
+      questionText: "Progress note are records kept by:",
+      options: [
+        "Nurses and doctors",
+        "Administrates",
+        "Medical records personnel",
+        "None of these"
+      ],
+      correctAnswer: "Nurses and doctors"
+    },
+    {
+      questionText: "The kind of survey items in which the respondents indicate the extent is known as:",
+      options: [
+        "Semantic differential scale",
+        "Likert scale",
+        "Rating scale",
+        "Attitude scale"
+      ],
+      correctAnswer: "Rating scale"
+    }
+  ]
+},
     // ===== UNIT 7: (ADD YOUR MCQs HERE) =====
     {
-      unitName: "Unit 7: Guidance/Academic Advising Counseling and Discipline",
-      questions: [
-        // Add all Unit 7 MCQs here in same format
-      ]
+  unitName: "Unit 7: Guidance/Academic Advising Counseling and Discipline",
+  questions: [
+    {
+      questionText: "Empathy is defined as:",
+      options: [
+        "Feeling of helplessness",
+        "Non-caring attitude",
+        "Synonym of sympathy",
+        "Patting oneself in someone else position"
+      ],
+      correctAnswer: "Patting oneself in someone else position"
     },
+    {
+      questionText: "In eclectic counseling the client and counselor works in:",
+      options: [
+        "Work in isolation",
+        "Clients depend on counselor",
+        "Coordinative method",
+        "None of these"
+      ],
+      correctAnswer: "Coordinative method"
+    },
+    {
+      questionText: "Areas of counseling includes all excepts:",
+      options: [
+        "Education and vocations",
+        "Personal and social",
+        "Family and marriage",
+        "Job adjustment and mental health problem"
+      ],
+      correctAnswer: "Family and marriage"
+    },
+    {
+      questionText: "The aims of guidance are:",
+      options: [
+        "To bring all round development of a child",
+        "To make him/her to every thing perfectly",
+        "To enable him/her exceptional in academics",
+        "All of these"
+      ],
+      correctAnswer: "To bring all round development of a child"
+    },
+    {
+      questionText: "The social aim of vocational guidance is:",
+      options: [
+        "Solve problems in social relationship",
+        "Develop feeling of social acceptance",
+        "Provide wish status in society",
+        "Both (a) and (b)"
+      ],
+      correctAnswer: "Provide wish status in society"
+    },
+    {
+      questionText: "Principles of counseling includes all except:",
+      options: [
+        "Acceptance",
+        "Respect",
+        "Autonomy",
+        "Respect to the counselor"
+      ],
+      correctAnswer: "Autonomy"
+    },
+    {
+      questionText: "The theory of self was developed by:",
+      options: [
+        "Carl Rogers",
+        "Karl Marx",
+        "Carlos Alcaraz",
+        "Carl Sagan"
+      ],
+      correctAnswer: "Carl Rogers"
+    },
+    {
+      questionText: "Occupational information is essential for:",
+      options: [
+        "Career refinement",
+        "Career upgradation",
+        "Career planning",
+        "None of these"
+      ],
+      correctAnswer: "Career upgradation"
+    },
+    {
+      questionText: "Counseling skills includes all excepts:",
+      options: [
+        "Attending",
+        "Listening",
+        "Giving assurance",
+        "Both (a) and (b)"
+      ],
+      correctAnswer: "Listening"
+    },
+    {
+      questionText: "Self directed education refers to:",
+      options: [
+        "Learning on one’s own",
+        "Learning by doing",
+        "Learning by example",
+        "Learning by hit and trial"
+      ],
+      correctAnswer: "Learning on one’s own"
+    }
+  ]
+},
     // ===== UNIT 8: (ADD YOUR MCQs HERE) =====
     {
-      unitName: "Unit 8: Ethics and Evidence-Based Teaching in Nursing Education",
-      questions: [
-        // Add all Unit 8 MCQs here in same format
-      ]
+  unitName: "Unit 8: Ethics and Evidence-Based Teaching in Nursing Education",
+  questions: [
+    {
+      questionText: "Strategies used in evidence-based teaching include all except:",
+      options: [
+        "Online and concept mapping",
+        "Internet and game-based learning",
+        "Problem-based learning case study",
+        "Simulation and seminar"
+      ],
+      correctAnswer: "Problem-based learning case study"
+    },
+    {
+      questionText: "Which of the following is an ethical principle that guide nursing practice?",
+      options: [
+        "Autonomy",
+        "Utilitarian",
+        "Virtue",
+        "Care"
+      ],
+      correctAnswer: "Utilitarian"
+    },
+    {
+      questionText: "Steps of EBP are:",
+      options: [
+        "Ask and analyze",
+        "Acquire and apply",
+        "Appraise",
+        "All of these"
+      ],
+      correctAnswer: "Appraise"
+    },
+    {
+      questionText: "Concept mapping are:",
+      options: [
+        "Visual representation of information",
+        "Auditory representation of information",
+        "Both (a) and (b)",
+        "None of these"
+      ],
+      correctAnswer: "Visual representation of information"
     }
   ]
 };
